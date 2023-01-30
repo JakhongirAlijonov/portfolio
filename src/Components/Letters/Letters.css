@@ -1,0 +1,35 @@
+.blast{
+    font-size: 103px;
+    font-weight: 700;
+    line-height: 120px;
+    color: #fff;
+    font-family: 'Open Sans' , sans-serif;
+    transition: .3s ease-in;
+    animation-name: blast;
+    animation-duration: 4s;
+    animation: blast  ease alternate ;
+}
+
+.title{
+
+padding:50px 400px 50px 50px ;
+}
+
+.blast:hover{
+    color: #08FDD8;
+}
+
+@keyframes blast {
+    0%{
+        transform: rotateX(0deg);
+        color: #000;
+    } 
+    50%{
+        transform: rotateY(45deg);
+
+    }
+    100%{
+        transform: rotateX(0deg);
+        
+    }
+}
