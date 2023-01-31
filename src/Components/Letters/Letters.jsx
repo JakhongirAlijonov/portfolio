@@ -9,7 +9,7 @@ let splitted = title.title.split('')
     <div>
       <h1 className="title">
         {splitted.map((char)=>{
-          return <span key={Math.random()} className='blast'>{char}</span>
+          return <span key={Math.random()} className='blast' >{char}</span>
         })}
       </h1>
     </div>

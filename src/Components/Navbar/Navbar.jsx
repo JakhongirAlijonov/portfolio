@@ -2,7 +2,6 @@ import React from "react";
 import NavbarImage from "../../../public/logo.svg";
 import { Link } from "react-router-dom";
 import './Styles.css'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
 function Navbar() {
