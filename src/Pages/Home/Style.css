@@ -13,7 +13,23 @@
   text-shadow: calc(var(--_i, -1) * 0.08em) -0.01em 0 var(--c),
     calc(var(--_i, -1) * -0.08em) 0.01em 2px #0004;
   outline-offset: 0.1em;
+
   transition: 0.3s;
+}
+
+.button-92 a {
+  text-decoration: none;
+  color: #fff;
+  text-shadow: calc(var(--_i, -1) * 0.08em) -0.01em 0 var(--c),
+    calc(var(--_i, -1) * -0.08em) 0.01em 2px #0004;
+  outline-offset: 0.1em;
+  --c: #fff;
+  background: linear-gradient(90deg, #0000 33%, #fff5, #0000 67%)
+      var(--_p, 100%) / 300% no-repeat,
+    #004dff;
+  color: #0000;
+  border: none;
+  transform: perspective(500px) rotateY(calc(20deg * var(--_i, -1)));
 }
 
 .button-92:hover,
@@ -47,15 +63,14 @@ section {
   height: 100vh;
 }
 
-
 .home-portfolio-info {
-  color: #fff;
+  color: rgba(255, 255, 255, 0.648);
   font-size: 20px;
   font-family: "Open sans ", sans-serif;
   padding-right: 250px;
 }
-.home-portfolio-info a{
-  color: #004dff;
+.home-portfolio-info a {
+  color: #004cffb1;
 }
 .stars {
   position: fixed;
@@ -65,6 +80,28 @@ section {
   height: 120%;
   transform: rotate(-45deg);
   z-index: -1;
+}
+
+.home-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.home-gallery img {
+  filter: brightness(50%);
+  -webkit-filter: brightness(50%);
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  -ms-transition: all 1s ease;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.home-gallery img:hover {
+  filter: brightness(100%);
+  -webkit-filter: brightness(100%);
 }
 
 .star {
