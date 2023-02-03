@@ -97,6 +97,7 @@ section {
   -ms-transition: all 1s ease;
   transition: all 0.3s ease;
   cursor: pointer;
+  object-fit:cover;
 }
 
 .home-gallery img:hover {
